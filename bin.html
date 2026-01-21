@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How Our Friendship Grew</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffe0ec, #e0f7ff);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 40px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e91e63;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      text-align: right;
+      font-style: italic;
+      margin-top: 40px;
+    }
+
+    .start-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255,255,255,0.9);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: #e91e63;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Audio -->
+  <audio id="bg-audio" loop>
+    <source src="mf.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Start Overlay -->
+  <div class="start-overlay" onclick="startAudio()">Tap to Start</div>
+
+  <div class="container">
+    <h1>Hey, listen...</h1>
+    <p>Meghh… just want to take a moment to tell you how truly special you are.</p>
+    <p>Ye konni days, I’ve seen something in you that most people spend years hiding or losing — pure emotion, strength, and truth. Nak telsu ni pain, you’ve carried heavy memories, and yet… here you are. Still nuv Stable ga unnav. Still smiling ... Still trying to understand others…</p>
+    <p>That takes real strength — You're a woman who values emotions,nen edo ninnu baga poguntunna or nik istam unnadi anko but nijam.. even na story cheppinapud feel ayyav— and that’s rare. In a world chasing followers, and fake love, you’re choosing something real. And nen Etla cheppali niku…let me tell you — that’s your greatness. That’s your power. The way you care, feel deeply, and try to understand others… literally nen chala rare ga nammutha like.. intha takuva Time lo.., and Ni laga ..Not many people have that heart.</p>
+    <p>But let me give you this advice — don’t ever forget your worth just because someone couldn’t see it. Your past may be heavy, but your soul is gold. Don’t let the people who failed to value you make you question your own light. You didn’t lose — they lost ankoo.</p>
+    <p>And you’re not alone anymore. I mean nen evarini degrade cheyatledhu… just .. I’ll be your comrade, and I mean it. U can share anything sad, happy , excitement…edina just nen nik okka msg dooram lo unna ante, maybe nen busy unde time lo fast ga reply iyyalekapovachu but… pakkaga i can do magic and ni mood ni chitka lo marchesta anko..okay  That’s what comrades do.</p>
+    <p>Comrade ante..not only who cares but who pushes to achive desired goal.</p>
+
+    <p>And you see.. nen comrade ani chosinapude , full happy ga feel ayya, boys..........kuda konni chinna chinna things ki happy avutaru..Then cmg to point..</p>
+    <p>Nik telso telvadoo.. chala chinna chinavi kuda observe chesta, maybe numbers gurtundakapovachu... but situations aite.. gurtuntai , nd lagggggg cheykunda okka matalo cheppalnte..chala complex unna ni brain ki hats off, i know ni brain lopala etla run avutai ani , but you still manage......</p>
+    <p>Ika Selavu..</p>
+    <div class="signature">– niii Comrade</div>
+  </div>
+
+  <script>
+    function startAudio() {
+      const audio = document.getElementById('bg-audio');
+      audio.play();
+      document.querySelector('.start-overlay').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
